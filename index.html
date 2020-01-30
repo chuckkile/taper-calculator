@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Kratom Taper Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <h1 class="heading">Calculate Grams per Day</h1>
+        <form class="inline-form" id="daily-form">
+          <span>If someone takes </span>
+          <select name="intake" id="amount">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+          </select>
+          <span>grams,</span>
+          <select name="intake-frequency" id="times-per-day">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <span>times per day, then they take</span>
+          <input type="number" id="grams-per-day" disabled>
+          <span>grams per day.</span>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-6 mx-auto">
+        <h1 class="heading">Calculate Taper Duration
+        </h1>
+        <form class="inline-form" id="reduction-form">
+          <span>If someone takes</span>
+          <input type="number" id="daily-grams" value="10">
+          <span>grams per day and they want to taper</span>
+          <select name="speed" id="speed">
+            <option value="15">.5g every 7 days (very slow)</option>
+            <option value="10">.5g every 5 days (slow)</option>
+            <option value="6" selected>.5g every 3 days (average)</option>
+            <option value="4">.5g every 2 days(fast)</option>
+            <option value="2">.5g every day (very fast)</option>
+          </select>
+          <span>, it will take</span>
+          <input type="number" id="days-to-zero" value="0" disabled>
+          <span>days to get to zero.</span>
+        </form>
+        <p id="over-24-tip"><span class="tip">Tip: </span>If someone takes more than 25g per day, they might be able to reduce the daily amount by more than .5 grams each day, perhaps 10% or more. With some experimentation find a comfortable place to start a structured taper.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

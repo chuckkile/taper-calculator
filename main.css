@@ -1,0 +1,61 @@
+.container {
+  padding-top: 5%;
+}
+
+form {
+  margin-bottom: 40px;
+}
+
+.inline-form input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  width: 50px;
+  background-color: #ffffb3;
+}
+
+#days-to-zero {
+  background-color: #ffffb3;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+span:first-child {
+  padding-left: 0;
+}
+
+input {
+  text-align: center;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+select {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-radius: none;
+  background-color: white;
+  background-color: #ffffb3;
+}
+
+.tip {
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
